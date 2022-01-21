@@ -1,0 +1,102 @@
+body{
+    display: flex;
+    background-image: radial-gradient(circle, #dfdbdb, rgb(110, 108, 108));
+    background-repeat: no-repeat;
+    height: 100vh;
+    justify-content: center;  
+}
+
+header{
+    font-family: Lobster;
+    font-size: 40px;
+    display: flex;
+    position: absolute;
+}
+
+img {
+    display: flex;
+    position: relative;
+    margin-right: 5px;
+    width: 150px;
+    height: 65px;
+    top: 15%;
+    animation-name: sistema;
+    animation-duration: 3s;
+    animation-delay: 2px;
+}
+
+form {
+    background: rgb(240, 230, 230);
+    border: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+    width: 40%;
+    padding: 5px 10px 10px 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 30%;
+    font-size: 18px;
+    animation-name: sistema;
+    animation-duration: 3s;
+    animation-delay: 2px;
+}
+
+h1, #cajaDato1, #seleccion {
+    display: flex;
+    justify-content: center;
+}
+
+#inputDinero{
+    text-align: center;
+    font-size: 90%;
+}
+
+#inputDivisaInicial{ 
+    margin-right: 20px;
+}
+
+#inputDivisaFinal{
+    margin-left:20px;
+}
+
+#btnCalcular {
+    width: 200px;
+    background-color: rgb(115, 211, 115);
+    display: flex;
+    align-content: center;
+}
+
+#alertaDatos{
+    width: 99%;
+    height: fit-content;
+    display: flex;
+    background-color: pink;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-size: 90%;
+    text-align: center;
+}
+
+#totalConvertido{
+    position: relative;
+    align-items: center;
+    width: 99%;
+    height: fit-content;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+
+@keyframes sistema{
+    from { opacity: 0;        
+        transform: scale(10);   
+        }    
+    to {  opacity: 1;        
+       transform: scale(1);    
+       }
+}

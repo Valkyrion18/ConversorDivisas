@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <title>Calculo de divisas</title>
+</head>
+
+<body onload="agregarListaDivisas()">
+  <header>Bienvenido al Sistema de Conversion de Divisas</header>
+  <img src="./img/Imagen-dolar.jpg" id="billete" title="Dolar">
+  <img src="./img/Imagen-peso-mexicano.jpg" id="billete" title="Peso Mexicano">
+  <img src="./img/Imagen-peso-colombiano.jpg" id="billete" title="Peso Colombiano">
+  <img src="./img/Imagen-euro.jpg" id="billete" title="Euro">
+  <img src="./img/Imagen-libra.jpg" id="billete" title="Libra">
+  <form action="">
+    <h1>Conversion de Divisas</h1>
+    <div id="cajaDato1">
+      <input type="text" id="inputDinero" placeholder="Cantidad de dinero:">
+    </div><br>
+    <div id="seleccion" >
+      <select name="select" id="inputDivisaInicial">
+        <option id="1" selected>-- Elige tu moneda</option>
+        <option id="2">Dolar</option>
+        <option id="3">Peso Mexicano</option>
+        <option id="4">Peso Colombiano</option>
+        <option id="5">Euro</option>
+        <option id="6">Libra Esterlina</option>
+      </select>
+      <label for="">convertir a</label>
+
+      <select name="select" id="inputDivisaFinal">
+        <option id="7" selected>-- Elige tu moneda</option>
+        <option id="8">Dolar</option>
+        <option id="9">Peso Mexicano</option>
+        <option id="10">Peso Colombiano</option>
+        <option id="11">Euro</option>
+        <option id="12">Libra Esterlina</option>
+
+      </select>
+    </div><br>
+    <input type="button" id="btnCalcular" value="Convertir" onclick="capturarInfo()">
+    <div id="mostrarAlerta">
+      <div>
+        <input type="text" id="alertaDatos" readonly>
+      </div>
+    </div>
+    <div id="mostrarResultado">
+      <div>
+        <input type="text" id="totalConvertido" readonly>
+      </div>
+    </div>
+  </form>
+  <script src="script.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+</body>
+
+</html>
